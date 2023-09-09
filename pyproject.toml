@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pytorch-basics"
+version = "0.1.0"
+description = ""
+authors = ["Matteo Fordiani <matteofordiani@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pytorch_basics"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+torchaudio = "^2.0.2"
+numpy = "^1.25.2"
+pandas = "^2.1.0"
+flwr = {extras = ["simulation"], version = "^1.5.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
